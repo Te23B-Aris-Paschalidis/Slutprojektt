@@ -1,8 +1,10 @@
 using System;
 
 namespace Slutprojekt;
-
-public class Player
+//spelaren
+public class Player : Character
 {
-
+   public int Gold;
+   public List<string> Inventory = new List<string>();
+   
 }
