@@ -16,5 +16,6 @@ public Enemy(string name, int hp, int damage, int gold) : base(name, hp)
     public override void Attack(Character target)
     {
         Console.WriteLine(Name + "attackerar " + target.Name + "!");
+        target.TakingDamage(Damage);
     }
 }
