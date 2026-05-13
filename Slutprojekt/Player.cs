@@ -7,7 +7,7 @@ public class Player : Character
    public int Gold;
    public List<string> Inventory = new List<string>();
    
-   public Player(string name) : base(name, 100) {Gold = 100}
+   public Player(string name) : base(name, 100) {Gold = 100 }
 
     public override void Attack(Character target)
     {
@@ -15,5 +15,8 @@ public class Player : Character
     target.TakingDamage(10);
     }
 
+public void ShowStatus()
+{
+Console.WriteLine(Name + " - HP: " +  Health + "/" )
 
 }
